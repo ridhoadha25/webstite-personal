@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <!----Font awesome cdn font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-a"></i>
+                    <div class="logo-text">M. RIDHO ADHA</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>        
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="WhatsApp Image 2024-11-23 at 20.20.02_92f4baca.jpg" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'am <span class="input">Mahasiwa IT</span></h5>
+                    <h1>M.RIDHO ADHA</h1>
+                    <p>Halo, Saya M. Ridho Adha!
+                        Saya seorang Mahasiswa IT dan software engineer pemula 
+                        dengan semangat besar untuk belajar dan menciptakan solusi teknologi. 
+                        Dengan dasar pengetahuan yang kuat dalam "pemrograman Html.Css dan pengembangan web", 
+                        saya terus mengasah keterampilan saya untuk membangun aplikasi yang fungsional dan inovatif.
+                        Portofolio ini adalah langkah awal saya untuk menunjukkan perjalanan saya dalam dunia teknologi.  
+                    </p>
+
+                    <div class="btn-group">
+                        <a href="#" class="btn active">Download Cv</a>
+                        <a href="#" class="Contact"></a>
+                    </div> 
+
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-pintrest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!---typed js for typing text effect--->
+    <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn-addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new typed(".input",{
+            strings:["Mahasiswa IT","SoftWare engginering","Web Developer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+    </script>   
+</body>
+</html>
